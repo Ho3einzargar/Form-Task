@@ -1,0 +1,35 @@
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.span-form{
+    color: red;
+}
+
+
+
+// <form class="ms-2" (ngSubmit)="onSubmit()" #f="ngForm">
+//     <div class="mb-3">
+//       <label for="exampleInputEmail1" class="form-label">Username</label>
+//       <input type="username"
+//          class="form-control w-50"
+//          id="exampleInputEmail1" 
+//          aria-describedby="emailHelp"
+//          ngModel
+//          name="Username"
+//          #username="ngModel"
+//          required>
+//          <span class="fw-bold help-block span-form  " *ngIf="!username.valid && username.touched">pls enter the value valid</span>
+//     </div>
+//     <div class="mb-3">
+//       <label for="exampleInputPassword1" class="form-label">Password</label>
+//       <input type="password"
+//          class="form-control w-50"
+//          id="exampleInputPassword1"
+//          ngModel
+//          name="Password"
+//          required
+//          #password="ngModel">
+//          <span class="fw-bold help-block span-form" *ngIf="!password.valid && password.touched">pls enter the value valid</span>
+//     </div>
+//     <button [disabled]="!f.valid" type="submit" class="btn btn-primary">Submit</button>
+//   </form>
