@@ -1,0 +1,13 @@
+<button class="btn btn-secondary ms-2" [routerLink]="['/']">Home</button>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="p-2">
+
+    <label for="username">Username :  </label>
+    <input class="form-control w-50" id="username" name="username" type="text" formControlName="username">
+    <br>
+    <label for="password">Password : </label>
+    <input  type="password" class="form-control w-50" id="password" formControlName="password">
+    <!-- <span class="fw-bold help-block span-form" *ngIf="!profileForm-password.valid && profileForm-password.touched">pls enter the value valid</span> -->
+
+    <button type="submit" [disabled]="!profileForm.valid"    class="btn btn-primary mt-2" >Submit</button>
+    <p>Form Status: {{ profileForm.status }}</p>
+  </form>
